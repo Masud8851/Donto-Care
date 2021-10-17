@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    top: 0;
+    background-color: blue;
+}
+.hero-slide-right {
+    position: relative;
+    background-image: url("../../image/banner/download.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    display: flex;
+    align-items: flex-end;
+}
+.animate-img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 22;
+}
+.animate-img img:first-child {
+    left: -91px;
+    position: absolute;
+    animation: alternate-reverse;
+    -webkit-animation-name: movebounce;
+    animation-name: movebounce;
+    -webkit-animation-delay: .1s;
+    animation-delay: .1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    bottom: 40px;
+}
+.aimg1{
+    animation-name: bounce-1;
+    animation-timing-function: linear;
+}
+@keyframes aimg1 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+}
+
+.animate-img .aimg2 {
+    margin-left: 88px;
+    -webkit-animation-name: movebounce;
+    animation-name: movebounce;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    bottom: 30px;
+}
