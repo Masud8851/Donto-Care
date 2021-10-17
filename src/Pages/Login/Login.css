@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.login{
+    background-color: aqua;
+    height: 100%;
+}
+.login-from{
+    background-color: aquamarine;
+    border-radius: 15px;
+}
+input{
+    border-radius: 15px;
+}
+.sign-in{
+    color: rgb(49, 22, 27);
+    margin-left: 10px;
+    text-align: center;
+    font-weight: 900;   
+}
+.login-btn{
+    width: 100%;
+    padding: 10px;
+    color: whitesmoke;
+    font-size: large;
+    background-color: rgb(49, 22, 27);
+    border-radius: 10px;
+}
+.forgot-password{
+    text-decoration: none;
+    font-style: italic;
+    padding: 10px;
+    font-size: medium;
+    color: crimson;
+    font-weight: bold;
+}
+.social-button {
+    text-decoration: none;
+    background-color:  rgb(49, 22, 27);
+    text-decoration: none;
+}

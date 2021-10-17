@@ -2,8 +2,10 @@ import React from "react";
 import logo from "../../image/logo/logo.png";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import useFirebase from "../../Hooks/useFirebase";
 
 const Navbar = () => {
+	const { user } = useFirebase();
 	return (
 		<div>
 			<div className="">
@@ -28,62 +30,66 @@ const Navbar = () => {
 							>
 								<ul class="navbar-nav m-auto">
 									<li class="nav-item">
-										<NavLink class="nav-link active" aria-current="page" to="#">
+										<NavLink
+											class="nav-link active"
+											aria-current="page"
+											to="/home"
+											activeStyle={{
+												fontWeight: "bold",
+												color: "blue",
+											}}
+										>
 											Home
 										</NavLink>
 									</li>
 									<li class="nav-item">
-										<NavLink class="nav-link" to="#">
-											Link
+										<NavLink
+											class="nav-link"
+											to="/services"
+											activeStyle={{
+												fontWeight: "bold",
+												color: "blue",
+											}}
+										>
+											Services
 										</NavLink>
 									</li>
-									<li class="nav-item dropdown">
+									<li class="nav-item ">
 										<NavLink
-											class="nav-link dropdown-toggle"
-											to="#"
-											id="navbarDropdown"
-											role="button"
-											data-bs-toggle="dropdown"
-											aria-expanded="false"
+											class="nav-link "
+											to="/about"
+											activeStyle={{
+												fontWeight: "bold",
+												color: "blue",
+											}}
 										>
-											Dropdown
+											About us
 										</NavLink>
-										<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-											<li>
-												<NavLink class="dropdown-item" to="#">
-													Action
-												</NavLink>
-											</li>
-											<li>
-												<NavLink class="dropdown-item" to="#">
-													Another action
-												</NavLink>
-											</li>
-											<li>
-												<hr class="dropdown-divider" />
-											</li>
-											<li>
-												<NavLink class="dropdown-item" to="#">
-													Something else here
-												</NavLink>
-											</li>
-										</ul>
 									</li>
 									<li class="nav-item">
 										<NavLink
-											class="nav-link disabled"
-											to="#"
-											tabindex="-1"
-											aria-disabled="true"
+											class="nav-link "
+											to="/contact"
+											activeStyle={{
+												fontWeight: "bold",
+												color: "blue",
+											}}
 										>
-											Disabled
+											Contact
 										</NavLink>
 									</li>
 								</ul>
 								<div class="d-flex align-items-center justify-content-center">
-									<p>user name</p>
-									<button className="btn btn-primary m-2">Sign in</button>
-									<button className="btn btn-primary m-2">Sign up</button>
+									<p></p>
+									{user.email ? (
+										<NavLink to="/" className="btn btn-primary m-2">
+											Sign up
+										</NavLink>
+									) : (
+										<NavLink to="/login" className="btn btn-primary m-2">
+											Sign in
+										</NavLink>
+									)}
 								</div>
 							</div>
 						</div>

@@ -7,7 +7,6 @@ import secondimg from "../../image/banner/doctorfinding.c2532ac3.png";
 import appointment from "../../image/emerhgency/appointment.c2e8b7ae.svg";
 import emergency from "../../image/emerhgency/emergency.svg";
 import t427 from "../../image/emerhgency/2in4ty.svg";
-import Footer from "../../Pages/Footer/Footer";
 
 const Home = () => {
 	return (
