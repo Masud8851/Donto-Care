@@ -1,14 +1,20 @@
 .single-contact-info {
     min-height: 171px;
     background: #fff;
-    box-shadow: 0 6px 26px rgb(0 0 0 / 6%);
+    box-shadow: 10px 16px 26px rgb(49 22 27 / 6%);
     display: flex;
     align-items: center;
     text-align: center;
     padding: 0 35px;
-    -webkit-transition: .5s;
-    transition: .5s;
+    transition: width 2s, height 4s;
 }
+.single-contact-info:hover{
+    padding-bottom: 10px;
+    background-color: aquamarine;
+    border-radius: 15px;
+    color: rgb(49, 22, 27);
+}
+
 .single-contact-info .c-icon {
     width: 70px;
     height: 70px;
@@ -20,11 +26,34 @@
     color: #fc5185;
     color: var(--main-color);
     font-size: 26px;
-    -webkit-transition: .5s;
     transition: .5s;
     margin-right: 20px;
 }
 .single-contact-info.icon2 .c-icon {
     color: #16d88a;
     background: #dcf9ee;
+}
+
+/* Get In Touch */
+
+button.contact-submit-btn {
+    height: 62px;
+    background-color: aquamarine;
+    color: black;
+    text-transform: capitalize;
+    padding: 0 45px;
+    margin-top: 30px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.touch-input input,textarea{
+    border-radius: 0;
+    border: 0;
+    background-color: white;
+    box-shadow: 0 1px 5px gray;
+}
+textarea{
+    min-height: 175px;
+    background-color: white;
+    box-shadow: 0 1px 5px gray;
 }
