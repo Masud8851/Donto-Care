@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "../../image/logo/logo.png";
 import { NavLink } from "react-router-dom";
-import "./Navbar.css";
+import logo from "../../image/logo/logo.png";
 import useFirebase from "../../Hooks/useFirebase";
+import "./Navbar.css";
 
 const Navbar = () => {
 	const { user } = useFirebase();
@@ -10,7 +10,7 @@ const Navbar = () => {
 		<div>
 			<div>
 				<div className="container">
-					<nav className="navbar navbar-expand-lg navbar-light nav-bar ">
+					<nav className="navbar navbar-expand-lg navbar-light nav-bar">
 						<div className="container-fluid align-items-center">
 							<img src={logo} alt="" />
 							<button
