@@ -6,34 +6,42 @@ import Register from "./Pages/Register/Register";
 import Services from "./Pages/Services/Services";
 import Contact from "./Pages/Contact/Contact";
 import AboutUs from "./Pages/AboutUS/AboutUs";
+import Appointment from "./Pages/Appointment/Appointment";
+import Navbar from "./Pages/NavBar/Navbar";
+import Footer from "./Pages/Footer/Footer";
 
 function App() {
 	return (
 		<div className="App">
 			<Router>
+				<Navbar />
 				<Switch>
 					<Route exact path="/">
 						<Home></Home>
 					</Route>
-					<Route exact path="/home">
+					<Route path="/home">
 						<Home></Home>
 					</Route>
-					<Route exact path="/services">
+					<Route path="/services">
 						<Services></Services>
 					</Route>
-					<Route exact path="/about">
+					<Route path="/about">
 						<AboutUs></AboutUs>
 					</Route>
-					<Route exact path="/contact">
+					<Route path="/contact">
 						<Contact></Contact>
 					</Route>
-					<Route exact path="/login">
+					<Route path="/appoitment">
+						<Appointment></Appointment>
+					</Route>
+					<Route path="/login">
 						<Login></Login>
 					</Route>
-					<Route exact path="/register">
+					<Route path="/register">
 						<Register></Register>
 					</Route>
 				</Switch>
+				<Footer />
 			</Router>
 		</div>
 	);

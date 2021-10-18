@@ -7,6 +7,7 @@ import secondimg from "../../image/banner/doctorfinding.c2532ac3.png";
 import appointment from "../../image/emerhgency/appointment.c2e8b7ae.svg";
 import emergency from "../../image/emerhgency/emergency.svg";
 import t427 from "../../image/emerhgency/2in4ty.svg";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
 	return (
@@ -25,12 +26,12 @@ const Home = () => {
 									that you deserve! We are dedicated about our duties.
 								</p>
 								<div>
-									<button className="btn btn-warning m-2 p-3">
+									<NavLink to="/appoitment" className="btn btn-warning m-2 p-3">
 										Appointment
-									</button>
-									<button className="btn btn-warning m-2 p-3">
+									</NavLink>
+									<NavLink to="/about" className="btn btn-warning m-2 p-3">
 										Learn More
-									</button>
+									</NavLink>
 								</div>
 							</div>
 							<div className="col-md-6">
