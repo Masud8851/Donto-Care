@@ -8,7 +8,7 @@ Tools I used:
 - Firebase
 - And HTML, CSS also.
 
-* In this project you can see -
+## In this project you can see -
 
 - A Dental Care Website
 - Their Services
