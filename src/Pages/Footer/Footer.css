@@ -1,6 +1,11 @@
 .footer{
-    position:absolute;
-    left:0;
-    bottom:0;
-    right:0;
+    padding: 2%;
+   /* text-align: start; */
+    background-color: aqua;
+    padding-bottom: 0;
+}
+.under-footer{
+    text-align: center;
+    border-top: 1px solid green;
+    align-items: center;
 }

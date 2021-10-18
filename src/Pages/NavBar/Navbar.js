@@ -3,12 +3,13 @@ import { NavLink } from "react-router-dom";
 import logo from "../../image/logo/logo.png";
 import useFirebase from "../../Hooks/useFirebase";
 import "./Navbar.css";
+import { Nav } from "react-bootstrap";
 
 const Navbar = () => {
 	const { user } = useFirebase();
 	return (
 		<div>
-			<div>
+			<div className="nav-head">
 				<div className="container">
 					<nav className="navbar navbar-expand-lg navbar-light nav-bar">
 						<div className="container-fluid align-items-center">

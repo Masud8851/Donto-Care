@@ -1,6 +1,4 @@
 import React from "react";
-import Footer from "../Footer/Footer";
-import Navbar from "../NavBar/Navbar";
 import "./Contact.css";
 import first from "../../image/About/about-4.png";
 
@@ -8,7 +6,6 @@ const Contact = () => {
 	return (
 		<div>
 			<div className="services-head">
-				<Navbar></Navbar>
 				<div>
 					<div className="container">
 						<div className="row g-3 align-items-center justify-content-center p-3">

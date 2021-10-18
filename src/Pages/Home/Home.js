@@ -13,7 +13,7 @@ const Home = () => {
 	return (
 		<div>
 			<div className="header ">
-				<Navbar></Navbar>
+				
 				<div className="mt-5 mb-5 pb-5">
 					<div className="container">
 						<div className="row align-items-center justify-content-center g-4">
@@ -104,7 +104,6 @@ const Home = () => {
 			{/* Services 6 */}
 			<h1>Services 6</h1>
 			<br />
-			{/* <Footer></Footer> */}
 		</div>
 	);
 };

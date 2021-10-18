@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../NavBar/Navbar";
 import "./AboutUs.css";
 import first from "../../image/About/about-4.png";
 
@@ -8,7 +7,6 @@ const AboutUs = () => {
 		<div>
 			<div>
 				<div className="services-head">
-					<Navbar />
 					<div>
 						<div className="container">
 							<div className="row g-3 align-items-center justify-content-center p-3">

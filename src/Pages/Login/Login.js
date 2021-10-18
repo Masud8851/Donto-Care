@@ -1,15 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../NavBar/Navbar";
 import login from "../../image/login/login-side.jpg";
 import "./Login.css";
-import Footer from "../Footer/Footer";
 
 const Login = () => {
 	return (
 		<div>
 			<div className="login-body">
-				<Navbar></Navbar>
 				<div className="login">
 					<div className="container">
 						<div className="row align-items-center justify-content-center">

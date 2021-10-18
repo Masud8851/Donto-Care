@@ -1,13 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../NavBar/Navbar";
 import "./Register.css";
 
 const Register = () => {
 	return (
 		<div>
 			<div className="register">
-				<Navbar></Navbar>
 				<div className="row ">
 					<div className="col-md-3"></div>
 					<div className="col-md-6">

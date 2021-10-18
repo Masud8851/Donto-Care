@@ -1,81 +1,58 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import "./Footer.css";
 
 const Footer = () => {
 	return (
-		<div className="footer">
+		<div className="footer text-lg-start text-sm-center">
 			<div className="container">
 				<div className="row">
 					<div className="col-md-3">
 						<h1>Practice</h1>
 						<ul>
-							<li>
-								<NavLink>About</NavLink>
-							</li>
-							<li>
-								<NavLink>For Patients</NavLink>
-							</li>
-							<li>
-								<NavLink>FAQs</NavLink>
-							</li>
-							<li>
-								<NavLink>Contact Us</NavLink>
-							</li>
-							<li>
-								<NavLink>Blog</NavLink>
-							</li>
+							<li>About</li>
+							<li>For Patients</li>
+							<li>FAQs</li>
+							<li>Contact Us</li>
+							<li>Blog</li>
 						</ul>
 					</div>
 					<div className="col-md-3">
 						<h1>Resources</h1>
 						<ul>
-							<li>
-								<NavLink>New Patients</NavLink>
-							</li>
-							<li>
-								<NavLink>Meet the Team</NavLink>
-							</li>
-							<li>
-								<NavLink>Patient Form</NavLink>
-							</li>
-							<li>
-								<NavLink>Insurance</NavLink>
-							</li>
-							<li>
-								<NavLink>Account Login</NavLink>
-							</li>
+							<li>New Patients</li>
+							<li>Meet the Team</li>
+							<li>Patient Form</li>
+							<li>Insurance</li>
+							<li>Account Login</li>
 						</ul>
 					</div>
 					<div className="col-md-3">
 						<h1>Services</h1>
 						<ul>
-							<li>
-								<NavLink>Dental Dictionary</NavLink>
-							</li>
-							<li>
-								<NavLink>Dental Sealands</NavLink>
-							</li>
-							<li>
-								<NavLink>Dental Implants</NavLink>
-							</li>
-							<li>
-								<NavLink>General Dentistry</NavLink>
-							</li>
-							<li>
-								<NavLink>Sedation Dentistry</NavLink>
-							</li>
+							<li>Dental Dictionary</li>
+							<li>Dental Sealands</li>
+							<li>Dental Implants</li>
+							<li>General Dentistry</li>
+							<li>Sedation Dentistry</li>
 						</ul>
 					</div>
 					<div className="col-md-3">
 						<h1>Our Address</h1>
-						<p>Datobbo Dentistry 5212 Cedar</p>
-						<p>Village Dr Mason, NY.</p>
-						<p>Phone:+1 3500 5867 340</p>
-						<p>Email:yourdomain@gmail.com</p>
-						<p>Fax:+1 675 5867 340</p>
+						<ul>
+							<li>Datobbo Dentistry 5212 </li>
+							<li>Village Dr Mason, NY.</li>
+							<li>Phone:+1 3500 5867 340</li>
+							<li>Email:yourdomain@gmail.com</li>
+							<li>Fax:+1 675 5867 340</li>
+						</ul>
 					</div>
 				</div>
 			</div>
+			<footer className="under-footer">
+				<div>
+					<p>©️ All Copyrigths reserver by ThemeForest</p>
+				</div>
+			</footer>
 		</div>
 	);
 };

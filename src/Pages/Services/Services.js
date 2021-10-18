@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../NavBar/Navbar";
 import "./Services.css";
 import first from "../../image/About/about-4.png";
 
@@ -7,7 +6,6 @@ const Services = () => {
 	return (
 		<div>
 			<div className="services-head">
-				<Navbar></Navbar>
 				<div>
 					<div className="container">
 						<div className="row align-items-center justify-content-center p-3">

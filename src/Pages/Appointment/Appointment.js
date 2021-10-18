@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../NavBar/Navbar";
 import { useState } from "react";
 import Calendar from "react-calendar";
 
@@ -9,7 +8,6 @@ const Appointment = () => {
 		<div>
 			<div>
 				<div className="services-head">
-					<Navbar></Navbar>
 					<div>
 						<div className="container">
 							<div className="row align-items-center justify-content-center p-3">
