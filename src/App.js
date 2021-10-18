@@ -9,6 +9,7 @@ import AboutUs from "./Pages/AboutUS/AboutUs";
 import Appointment from "./Pages/Appointment/Appointment";
 import Navbar from "./Pages/NavBar/Navbar";
 import Footer from "./Pages/Footer/Footer";
+import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
 	return (
@@ -39,6 +40,9 @@ function App() {
 					</Route>
 					<Route path="/register">
 						<Register></Register>
+					</Route>
+					<Route path="*">
+						<NotFound></NotFound>
 					</Route>
 				</Switch>
 				{/* <Footer /> */}
