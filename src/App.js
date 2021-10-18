@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
@@ -14,7 +14,7 @@ function App() {
 	return (
 		<div className="App">
 			<Router>
-				<Navbar />
+				{/* <Navbar /> */}
 				<Switch>
 					<Route exact path="/">
 						<Home></Home>
@@ -41,7 +41,7 @@ function App() {
 						<Register></Register>
 					</Route>
 				</Switch>
-				<Footer />
+				{/* <Footer /> */}
 			</Router>
 		</div>
 	);
