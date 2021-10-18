@@ -16,4 +16,5 @@ Tools I used:
 - Private Route
 - Sign in and Sign Up
 - Dental Problem Description
-- Firebase Authentication Using Creating User and also by login with Google or Anything like this
+- Firebase Authentication To Create New User and also for Existing User.
+- And also for login with Google or Anything like this
