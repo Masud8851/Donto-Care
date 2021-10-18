@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.login-body{
+    background-color: aqua;
+}
 .login{
     background-color: aqua;
     height: 100%;
@@ -35,6 +38,14 @@ input{
     padding: 10px;
     font-size: medium;
     color: crimson;
+    font-weight: bold;
+}
+.any-account{
+    text-decoration: none;
+    font-style: italic;
+    padding: 10px;
+    font-size: medium;
+    color: chocolate;
     font-weight: bold;
 }
 .social-button {

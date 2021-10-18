@@ -1,0 +1,13 @@
+.register{
+    background-color: aqua;
+}
+.sign-up{
+    background-color: aquamarine;
+    border-radius: 15px;
+    margin: 45px;
+}
+.already-account{
+    text-decoration: none;
+    font-style: italic;
+    color: brown;
+}

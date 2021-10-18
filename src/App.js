@@ -10,7 +10,6 @@ import Appointment from "./Pages/Appointment/Appointment";
 import Navbar from "./Pages/NavBar/Navbar";
 
 import NotFound from "./Pages/NotFound/NotFound";
-import Footer from "./Pages/Footer";
 
 function App() {
 	return (
