@@ -4,6 +4,7 @@ import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
 import Services from "./Pages/Services/Services";
+import Contact from "./Pages/Contact/Contact";
 
 function App() {
 	return (
@@ -18,6 +19,9 @@ function App() {
 					</Route>
 					<Route exact path="/services">
 						<Services></Services>
+					</Route>
+					<Route exact path="/contact">
+						<Contact></Contact>
 					</Route>
 					<Route exact path="/login">
 						<Login></Login>

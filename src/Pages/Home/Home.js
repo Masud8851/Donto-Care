@@ -53,7 +53,7 @@ const Home = () => {
 						<div className="card h-100">
 							<img
 								src={appointment}
-								className="card-img-top rounded-circle  mx-auto p-2 w-25 m-3"
+								className="card-img-top rounded mt-3  mx-auto p-2 w-25 m-2"
 								alt="..."
 							/>
 							<div className="card-body">
@@ -69,7 +69,7 @@ const Home = () => {
 						<div className="card h-100">
 							<img
 								src={emergency}
-								className="card-img-top  mx-auto p-2 w-25 m-3"
+								className="card-img-top  mx-auto p-2 w-25 m-2"
 								alt="..."
 							/>
 							<div className="card-body">
