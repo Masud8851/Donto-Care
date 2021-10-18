@@ -13,7 +13,6 @@ const Home = () => {
 	return (
 		<div>
 			<div className="header ">
-				
 				<div className="mt-5 mb-5 pb-5">
 					<div className="container">
 						<div className="row align-items-center justify-content-center g-4">
@@ -48,7 +47,7 @@ const Home = () => {
 				</div>
 			</div>
 
-			<div className="container">
+			<div className="container mt-5">
 				<div className="row row-cols-1 row-cols-md-3 g-4">
 					<div className="col">
 						<div className="card h-100">
