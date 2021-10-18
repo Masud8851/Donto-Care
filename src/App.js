@@ -8,8 +8,9 @@ import Contact from "./Pages/Contact/Contact";
 import AboutUs from "./Pages/AboutUS/AboutUs";
 import Appointment from "./Pages/Appointment/Appointment";
 import Navbar from "./Pages/NavBar/Navbar";
-import Footer from "./Pages/Footer/Footer";
+
 import NotFound from "./Pages/NotFound/NotFound";
+import Footer from "./Pages/Footer";
 
 function App() {
 	return (
