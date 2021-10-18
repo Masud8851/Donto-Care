@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../NavBar/Navbar";
 import "./Home.css";
 import banner from "../../image/banner/hero-theeth.png";
 import firstimg from "../../image/banner/woman-brush.c4158ac5.png";

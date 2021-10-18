@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import logo from "../../image/logo/logo.png";
 import useFirebase from "../../Hooks/useFirebase";
 import "./Navbar.css";
-import { Nav } from "react-bootstrap";
 
 const Navbar = () => {
 	const { user } = useFirebase();
