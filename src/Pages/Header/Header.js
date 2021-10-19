@@ -6,6 +6,7 @@ import "./Header.css";
 
 const Header = () => {
 	const { user, logout } = useAuth();
+
 	return (
 		<div>
 			<div className="nav-head">
@@ -82,12 +83,15 @@ const Header = () => {
 								<div className="d-flex align-items-center justify-content-center">
 									<p></p>
 									{user.email ? (
-										<NavLink to="/" className="btn btn-primary m-2">
-											Sign up
-										</NavLink>
+										<div>
+											<span>{user.displayName} </span>
+											<button onClick={logout} className="btn btn-primary m-2">
+												Logout
+											</button>
+										</div>
 									) : (
 										<NavLink to="/login" className="btn btn-primary m-2">
-											Sign in
+											Login
 										</NavLink>
 									)}
 								</div>

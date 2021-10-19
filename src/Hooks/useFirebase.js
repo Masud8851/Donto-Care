@@ -31,7 +31,7 @@ const useFirebase = () => {
 	const signInUsingGoogle = () => {
 		signInWithPopup(auth, googleProvider)
 			.then((result) => {
-				console.log(result.user);
+				// console.log(result.user);
 				setUser(result.user);
 			})
 			.catch((error) => {
@@ -47,9 +47,15 @@ const useFirebase = () => {
 	};
 
 	const logout = () => {
-		signOut(auth).then(() => {
-			setUser({});
-		});
+		signOut(auth)
+			.then(() => {
+				// Sign-out successful.
+				setUser("");
+			})
+			.catch((error) => {
+				// An error happened.
+				// setError(error.message);
+			});
 	};
 
 	useEffect(() => {
