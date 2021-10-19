@@ -9,6 +9,8 @@ import t427 from "../../image/emerhgency/2in4ty.svg";
 import { Link, NavLink } from "react-router-dom";
 import useFirebase from "../../Hooks/useFirebase";
 import { Card, Col, Container, Row } from "react-bootstrap";
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
 
 const Home = () => {
 	const { doctors } = useFirebase();
@@ -20,6 +22,7 @@ const Home = () => {
 	return (
 		<div>
 			<div className="header ">
+				<Header />
 				<div className="mt-5 mb-5 pb-5">
 					<div className="container">
 						<div className="row align-items-center justify-content-center g-4">
@@ -58,7 +61,7 @@ const Home = () => {
 			</div>
 
 			<div className="container mt-5">
-				<h1 className="mb-5">[ Hospitality ]</h1>
+				<h1 className="mb-5 text-success">[ Hospitality ]</h1>
 				<div className="row row-cols-1 row-cols-md-3 g-4">
 					<div className="col">
 						<div className="card h-100">
@@ -113,7 +116,7 @@ const Home = () => {
 
 			{/* Services 6 */}
 
-			<h1 className="mt-5">[ Services ]</h1>
+			<h1 className="mt-5 text-success">[ Services ]</h1>
 			<Container>
 				<Row xs={1} md={3} className="g-4 my-4 py-4">
 					{sliceDoctor.map((doctor) => (
@@ -137,6 +140,7 @@ const Home = () => {
 					))}
 				</Row>
 			</Container>
+			<Footer />
 		</div>
 	);
 };

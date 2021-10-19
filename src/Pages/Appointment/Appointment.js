@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import Calendar from "react-calendar";
 import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
 import "./Appoinment.css";
 
 const Appointment = () => {
@@ -13,10 +15,11 @@ const Appointment = () => {
 		<div>
 			<div>
 				<div className="services-head">
+					<Header />
 					<div>
 						<div className="container">
-							<div className="row align-items-center justify-content-center p-3">
-								<div className="col-md-6 p-3">
+							<div className="row align-items-center justify-content-center">
+								<div className="col-md-6 ">
 									<h1 className="text-dark text-start">
 										Take Your Appintment Here
 									</h1>
@@ -25,7 +28,7 @@ const Appointment = () => {
 										Ipsam, hic?
 									</p>
 								</div>
-								<div className="col-md-6 p-3">
+								<div className="col-md-6">
 									<div>
 										<img
 											src="https://i.ibb.co/58hYKkL/3884687.jpg"
@@ -69,6 +72,7 @@ const Appointment = () => {
 						Confirm
 					</Link>
 				</div>
+				<Footer />
 			</div>
 		</div>
 	);

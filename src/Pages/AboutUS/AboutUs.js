@@ -1,12 +1,15 @@
 import React from "react";
 import "./AboutUs.css";
 import first from "../../image/About/about-4.png";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const AboutUs = () => {
 	return (
 		<div>
 			<div>
 				<div className="services-head">
+					<Header />
 					<div>
 						<div className="container">
 							<div className="row g-3 align-items-center justify-content-center">
@@ -120,6 +123,7 @@ const AboutUs = () => {
 						</div>
 					</div>
 				</div>
+				<Footer />
 			</div>
 		</div>
 	);

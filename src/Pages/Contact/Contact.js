@@ -2,11 +2,14 @@ import React from "react";
 import "./Contact.css";
 import first from "../../image/About/about-4.png";
 import { Link } from "react-router-dom";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const Contact = () => {
 	return (
 		<div>
 			<div className="services-head">
+				<Header />
 				<div>
 					<div className="container">
 						<div className="row g-3 align-items-center justify-content-center ">
@@ -126,6 +129,7 @@ const Contact = () => {
 					</Link>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };

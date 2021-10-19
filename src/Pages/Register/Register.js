@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
 import "./Register.css";
 
 const Register = () => {
 	return (
 		<div>
 			<div className="register">
+				<Header />
 				<div className="row ">
 					<div className="col-md-3"></div>
 					<div className="col-md-6">
@@ -38,7 +41,9 @@ const Register = () => {
 								/>
 							</div>
 							<div className="p-2 mb-2">
-								<button className="login-btn">Create Account Now</button>
+								<Link to="/login" className="login-btn">
+									Create Account Now
+								</Link>
 							</div>
 
 							<Link className="already-account" to="/login">
@@ -62,6 +67,7 @@ const Register = () => {
 					</div>
 					<div className="col-md-3"></div>
 				</div>
+				<Footer />
 			</div>
 		</div>
 	);

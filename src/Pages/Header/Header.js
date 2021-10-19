@@ -1,9 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import useAuth from "../../Hooks/useAuth";
 import logo from "../../image/logo/logo.png";
 import "./Header.css";
 
 const Header = () => {
+	const { user, logout } = useAuth();
 	return (
 		<div>
 			<div className="nav-head">
@@ -79,7 +81,7 @@ const Header = () => {
 								</ul>
 								<div className="d-flex align-items-center justify-content-center">
 									<p></p>
-									{/* {user.email ? (
+									{user.email ? (
 										<NavLink to="/" className="btn btn-primary m-2">
 											Sign up
 										</NavLink>
@@ -87,7 +89,7 @@ const Header = () => {
 										<NavLink to="/login" className="btn btn-primary m-2">
 											Sign in
 										</NavLink>
-									)} */}
+									)}
 								</div>
 							</div>
 						</div>

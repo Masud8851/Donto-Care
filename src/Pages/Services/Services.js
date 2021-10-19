@@ -5,6 +5,8 @@ import useFirebase from "../../Hooks/useFirebase";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Service from "../Service/Service";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const Services = () => {
 	const { doctors } = useFirebase();
@@ -13,6 +15,7 @@ const Services = () => {
 		<div>
 			<div>
 				<div className="services-head">
+					<Header />
 					<div>
 						<div className="container">
 							<div className="row align-items-center justify-content-center">
@@ -61,6 +64,7 @@ const Services = () => {
 						))}
 					</Row>
 				</Container>
+				<Footer />
 			</div>
 		</div>
 	);

@@ -4,6 +4,8 @@ import useAuth from "../../Hooks/useAuth";
 import first from "../../image/About/about-4.png";
 import useFirebase from "../../Hooks/useFirebase";
 import { Link } from "react-router-dom";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const Service = ({ service }) => {
 	const { id } = useParams();
@@ -11,6 +13,7 @@ const Service = ({ service }) => {
 	return (
 		<div>
 			<div className="services-head">
+				<Header />
 				<div>
 					<div className="container">
 						<div className="row align-items-center justify-content-center">
@@ -44,6 +47,7 @@ const Service = ({ service }) => {
 					<Link to={`/service/${id}`}></Link>
 				</div>
 			</div> */}
+			<Footer />
 		</div>
 	);
 };
