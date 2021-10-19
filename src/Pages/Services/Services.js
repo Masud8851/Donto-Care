@@ -9,17 +9,17 @@ const Services = () => {
 				<div className="services-head">
 					<div>
 						<div className="container">
-							<div className="row align-items-center justify-content-center p-3">
-								<div className="col-md-6 p-3">
+							<div className="row align-items-center justify-content-center">
+								<div className="col-md-6 ">
 									<h1>Service Details</h1>
 									<p>
 										Lorem ipsum dolor sit amet consectetur adipisicing elit.
 										Ipsam, hic?
 									</p>
 								</div>
-								<div className="col-md-6 p-3">
+								<div className="col-md-6 ">
 									<div>
-										<img src={first} id="teeth" alt="" className="p-5" />
+										<img src={first} id="teeth" alt="" className="p-3" />
 									</div>
 								</div>
 							</div>

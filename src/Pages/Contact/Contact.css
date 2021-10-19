@@ -1,7 +1,7 @@
 .single-contact-info {
     min-height: 171px;
     background: #fff;
-    box-shadow: 10px 16px 26px rgb(49 22 27 / 6%);
+    box-shadow: 1px 2px 2px cyan;
     display: flex;
     align-items: center;
     text-align: center;
