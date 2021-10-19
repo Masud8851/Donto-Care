@@ -1,9 +1,14 @@
 import React from "react";
 import { useState } from "react";
 import Calendar from "react-calendar";
+import { Link } from "react-router-dom";
+import "./Appoinment.css";
 
 const Appointment = () => {
-	const [value, onChange] = useState(new Date());
+	const [date, setDate] = useState(new Date());
+	const onChange = (date) => {
+		setDate(date);
+	};
 	return (
 		<div>
 			<div>
@@ -37,7 +42,7 @@ const Appointment = () => {
 				<div className="container mt-5 mb-5">
 					<h1 className="pb-5">Request Appointment</h1>
 					<form className="row g-3 align-items-center">
-						<div class="col-md-6 touch-input">
+						<div class="col-md-6 appointment-input">
 							<div>
 								<input
 									type="text"
@@ -56,13 +61,13 @@ const Appointment = () => {
 							</div>
 						</div>
 						<div class="touch-input col-md-6">
-							<Calendar onChange={onChange} value={value} />
+							<Calendar onChange={onChange} value={date} />
 						</div>
 					</form>
 
-					<button class="contact-submit-btn" type="submit">
+					<Link to="/" className="confirm-btn m-2 p-3 mt-5 ms-0" type="submit">
 						Confirm
-					</button>
+					</Link>
 				</div>
 			</div>
 		</div>

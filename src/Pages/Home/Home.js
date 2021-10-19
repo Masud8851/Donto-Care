@@ -16,15 +16,18 @@ const Home = () => {
 					<div className="container">
 						<div className="row align-items-center justify-content-center g-4">
 							<div className="col-md-6 text-start">
-								<h4>Better Life Through</h4>
-								<h3>Better Dentistry</h3>
+								<h1>Better Life Through</h1>
+								<h2>Better Dentistry</h2>
 								<p>
 									Join us to a fun and friendly dental environment. Our
 									professionals are working so hard to see smile on your face
 									that you deserve! We are dedicated about our duties.
 								</p>
 								<div>
-									<NavLink to="/appoitment" className="btn btn-warning m-2 p-3">
+									<NavLink
+										to="/appoitment"
+										className="btn btn-warning m-2 p-3 ms-0"
+									>
 										Appointment
 									</NavLink>
 									<NavLink to="/about" className="btn btn-warning m-2 p-3">

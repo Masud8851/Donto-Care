@@ -1,0 +1,15 @@
+.appointment-input input{
+    border-radius: 0;
+    border: 0;
+    background-color: white;
+    box-shadow: 22px 2px 32px 1px cyan; 
+    border-radius: 5px;
+}
+.confirm-btn{
+    text-decoration: none;
+    background-color: rgb(181, 242, 246);
+    color: green;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 1px cyan;
+}
