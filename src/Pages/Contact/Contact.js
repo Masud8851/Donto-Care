@@ -19,7 +19,7 @@ const Contact = () => {
 							</div>
 							<div className="col-md-6 p-3">
 								<div>
-									<img src={first} id="teeth" alt="" className="p-5" />
+									<img src={first} id="teeth" alt="" className="p-4" />
 								</div>
 							</div>
 						</div>
