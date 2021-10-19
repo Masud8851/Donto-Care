@@ -5,7 +5,7 @@ initializeAuthentication();
 const useFirebase = () => {
 	const [doctors, setDoctors] = useState([]);
 	useEffect(() => {
-		fetch("./data.json")
+		fetch("data.json")
 			.then((res) => res.json())
 			.then((data) => setDoctors(data));
 	}, []);

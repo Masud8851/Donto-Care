@@ -6,12 +6,17 @@ import secondimg from "../../image/banner/doctorfinding.c2532ac3.png";
 import appointment from "../../image/emerhgency/appointment.c2e8b7ae.svg";
 import emergency from "../../image/emerhgency/emergency.svg";
 import t427 from "../../image/emerhgency/2in4ty.svg";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import useFirebase from "../../Hooks/useFirebase";
+import { Card, Col, Container, Row } from "react-bootstrap";
 
 const Home = () => {
 	const { doctors } = useFirebase();
-	console.log(doctors);
+	// console.log(doctors);
+
+	const sliceDoctor = doctors.slice(0, 6);
+	// console.log(sliceDoctor);
+
 	return (
 		<div>
 			<div className="header ">
@@ -53,6 +58,7 @@ const Home = () => {
 			</div>
 
 			<div className="container mt-5">
+				<h1 className="mb-5">[ Hospitality ]</h1>
 				<div className="row row-cols-1 row-cols-md-3 g-4">
 					<div className="col">
 						<div className="card h-100">
@@ -106,8 +112,31 @@ const Home = () => {
 			</div>
 
 			{/* Services 6 */}
-			<h1>Services 6</h1>
-			<br />
+
+			<h1 className="mt-5">[ Services ]</h1>
+			<Container>
+				<Row xs={1} md={3} className="g-4 my-4 py-4">
+					{sliceDoctor.map((doctor) => (
+						<Col>
+							<Card className="h-100">
+								<Card.Img variant="top" src={doctor.img} height="200" />
+								<Card.Body>
+									<Card.Title>{doctor.title}</Card.Title>
+									<Card.Text>
+										{`${doctor.description.slice(0, 140)}...`}
+									</Card.Text>
+									<Link to={`/service/${doctor.id}`}>
+										<button className="btn btn-primary btn-sm">
+											{" "}
+											View Details{" "}
+										</button>
+									</Link>
+								</Card.Body>
+							</Card>
+						</Col>
+					))}
+				</Row>
+			</Container>
 		</div>
 	);
 };

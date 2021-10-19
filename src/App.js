@@ -10,43 +10,50 @@ import NotFound from "./Pages/NotFound/NotFound";
 import Footer from "./Pages/Footer/Footer";
 import Header from "./Pages/Header/Header";
 import Services from "./Pages/Services/Services";
+import AuthProvider from "./Context/AuthProvide";
+import Service from "./Pages/Service/Service";
 
 function App() {
 	return (
 		<div className="App">
-			<Router>
-				<Header />
-				<Switch>
-					<Route exact path="/">
-						<Home></Home>
-					</Route>
-					<Route path="/home">
-						<Home></Home>
-					</Route>
-					<Route path="/services">
-						<Services></Services>
-					</Route>
-					<Route path="/about">
-						<AboutUs></AboutUs>
-					</Route>
-					<Route path="/contact">
-						<Contact></Contact>
-					</Route>
-					<Route path="/appoitment">
-						<Appointment></Appointment>
-					</Route>
-					<Route path="/login">
-						<Login></Login>
-					</Route>
-					<Route path="/register">
-						<Register></Register>
-					</Route>
-					<Route path="*">
-						<NotFound></NotFound>
-					</Route>
-				</Switch>
-				<Footer />
-			</Router>
+			<AuthProvider>
+				<Router>
+					<Header />
+					<Switch>
+						<Route exact path="/">
+							<Home></Home>
+						</Route>
+						<Route path="/home">
+							<Home></Home>
+						</Route>
+						<Route path="/services">
+							<Services></Services>
+						</Route>
+						<Route path="/services/:id">
+							<Service></Service>
+						</Route>
+						<Route path="/about">
+							<AboutUs></AboutUs>
+						</Route>
+						<Route path="/contact">
+							<Contact></Contact>
+						</Route>
+						<Route path="/appoitment">
+							<Appointment></Appointment>
+						</Route>
+						<Route path="/login">
+							<Login></Login>
+						</Route>
+						<Route path="/register">
+							<Register></Register>
+						</Route>
+						<Route path="*">
+							<NotFound></NotFound>
+						</Route>
+					</Switch>
+					<Footer />
+				</Router>
+			</AuthProvider>
 		</div>
 	);
 }

@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Services.css";
 import first from "../../image/About/about-4.png";
+import useFirebase from "../../Hooks/useFirebase";
+import { Card, Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import Service from "../Service/Service";
 
 const Services = () => {
+	const { doctors } = useFirebase();
+
 	return (
 		<div>
 			<div>
@@ -26,25 +32,35 @@ const Services = () => {
 						</div>
 					</div>
 				</div>
-				<h1>Services</h1>
-				<div class="row row-cols-1 row-cols-md-3 g-4">
-					<div class="col">
-						<div class="card h-100">
-							<img src="..." class="card-img-top" alt="..." />
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">
-									This is a wider card with supporting text below as a natural
-									lead-in to additional content. This content is a little bit
-									longer.
-								</p>
-							</div>
-							<div class="card-footer">
-								<small class="text-muted">Last updated 3 mins ago</small>
-							</div>
-						</div>
-					</div>
-				</div>
+				<h1 className="mt-5 text-success">[ Services ]</h1>
+				<Container>
+					<Row xs={1} md={3} className="g-4 py-4">
+						{doctors.map((service) => (
+							<Col>
+								<Card className="h-100">
+									<Card.Img variant="top" src={service.img} height="200" />
+									<Card.Body>
+										<Card.Title>{service.title}</Card.Title>
+										<Card.Text>
+											{`${service.description.slice(0, 140)}...`}
+										</Card.Text>
+										<Link to={`/service/${doctors.id}`}>
+											<button className="btn btn-primary btn-sm">
+												{" "}
+												View Details{" "}
+											</button>
+										</Link>
+										{/* <button className="btn btn-primary btn-sm">
+											{doctors.map((service) => (
+												<Service key={service.id} service={service}></Service>
+											))}
+										</button> */}
+									</Card.Body>
+								</Card>
+							</Col>
+						))}
+					</Row>
+				</Container>
 			</div>
 		</div>
 	);

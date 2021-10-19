@@ -11,10 +11,10 @@ const AboutUs = () => {
 						<div className="container">
 							<div className="row g-3 align-items-center justify-content-center">
 								<div className="col-md-6 ">
-									<h1>Service Details</h1>
+									<h1>About us</h1>
 									<p>
 										Lorem ipsum dolor sit amet consectetur adipisicing elit.
-										Ipsam, hic?
+										Ipsam,.
 									</p>
 								</div>
 								<div className="col-md-6 ">
