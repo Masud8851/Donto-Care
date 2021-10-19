@@ -19,7 +19,7 @@ const Services = () => {
 								</div>
 								<div className="col-md-6 ">
 									<div>
-										<img src={first} id="teeth" alt="" className="p-3" />
+										<img src={first} id="teeth" alt="" className="p-3 w-75" />
 									</div>
 								</div>
 							</div>
