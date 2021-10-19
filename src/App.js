@@ -16,37 +16,35 @@ function App() {
 		<div className="App">
 			<Router>
 				<Header />
-				<Router>
-					<Switch>
-						<Route exact path="/">
-							<Home></Home>
-						</Route>
-						<Route path="/home">
-							<Home></Home>
-						</Route>
-						<Route path="/services">
-							<Services></Services>
-						</Route>
-						<Route path="/about">
-							<AboutUs></AboutUs>
-						</Route>
-						<Route path="/contact">
-							<Contact></Contact>
-						</Route>
-						<Route path="/appoitment">
-							<Appointment></Appointment>
-						</Route>
-						<Route path="/login">
-							<Login></Login>
-						</Route>
-						<Route path="/register">
-							<Register></Register>
-						</Route>
-						<Route path="*">
-							<NotFound></NotFound>
-						</Route>
-					</Switch>
-				</Router>
+				<Switch>
+					<Route exact path="/">
+						<Home></Home>
+					</Route>
+					<Route path="/home">
+						<Home></Home>
+					</Route>
+					<Route path="/services">
+						<Services></Services>
+					</Route>
+					<Route path="/about">
+						<AboutUs></AboutUs>
+					</Route>
+					<Route path="/contact">
+						<Contact></Contact>
+					</Route>
+					<Route path="/appoitment">
+						<Appointment></Appointment>
+					</Route>
+					<Route path="/login">
+						<Login></Login>
+					</Route>
+					<Route path="/register">
+						<Register></Register>
+					</Route>
+					<Route path="*">
+						<NotFound></NotFound>
+					</Route>
+				</Switch>
 				<Footer />
 			</Router>
 		</div>
