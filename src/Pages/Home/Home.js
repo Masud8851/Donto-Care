@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
 import banner from "../../image/banner/hero-theeth.png";
 import firstimg from "../../image/banner/woman-brush.c4158ac5.png";
@@ -7,8 +7,11 @@ import appointment from "../../image/emerhgency/appointment.c2e8b7ae.svg";
 import emergency from "../../image/emerhgency/emergency.svg";
 import t427 from "../../image/emerhgency/2in4ty.svg";
 import { NavLink } from "react-router-dom";
+import useFirebase from "../../Hooks/useFirebase";
 
 const Home = () => {
+	const { doctors } = useFirebase();
+	console.log(doctors);
 	return (
 		<div>
 			<div className="header ">

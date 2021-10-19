@@ -1,11 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../image/logo/logo.png";
-import useFirebase from "../../Hooks/useFirebase";
-import "./Navbar.css";
+import "./Header.css";
 
-const Navbar = () => {
-	const { user } = useFirebase();
+const Header = () => {
 	return (
 		<div>
 			<div className="nav-head">
@@ -81,7 +79,7 @@ const Navbar = () => {
 								</ul>
 								<div className="d-flex align-items-center justify-content-center">
 									<p></p>
-									{user.email ? (
+									{/* {user.email ? (
 										<NavLink to="/" className="btn btn-primary m-2">
 											Sign up
 										</NavLink>
@@ -89,7 +87,7 @@ const Navbar = () => {
 										<NavLink to="/login" className="btn btn-primary m-2">
 											Sign in
 										</NavLink>
-									)}
+									)} */}
 								</div>
 							</div>
 						</div>
@@ -100,4 +98,4 @@ const Navbar = () => {
 	);
 };
 
-export default Navbar;
+export default Header;
