@@ -1,7 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home/Home";
-import Services from "./Pages/Services/Services";
 import AboutUs from "./Pages/AboutUS/AboutUs";
 import Contact from "./Pages/Contact/Contact";
 import Appointment from "./Pages/Appointment/Appointment";
@@ -10,6 +9,7 @@ import Register from "./Pages/Register/Register";
 import NotFound from "./Pages/NotFound/NotFound";
 import Footer from "./Pages/Footer/Footer";
 import Header from "./Pages/Header/Header";
+import Services from "./Pages/Services/Services";
 
 function App() {
 	return (

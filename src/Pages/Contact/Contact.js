@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import first from "../../image/About/about-4.png";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
 	return (
@@ -116,9 +117,13 @@ const Contact = () => {
 							></textarea>
 						</div>
 					</form>
-					<button class="contact-submit-btn" type="submit">
-						Contact Us
-					</button>
+					<Link
+						to="/"
+						className="contact-submit-btn m-2 p-3 mt-5 ms-0"
+						type="submit"
+					>
+						Confirm
+					</Link>
 				</div>
 			</div>
 		</div>

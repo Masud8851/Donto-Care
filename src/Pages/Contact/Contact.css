@@ -30,21 +30,19 @@
     margin-right: 20px;
 }
 .single-contact-info.icon2 .c-icon {
-    color: #16d88a;
+    color: aqua;
     background: #dcf9ee;
 }
 
 /* Get In Touch */
 
-button.contact-submit-btn {
-    height: 62px;
-    background-color: aquamarine;
-    color: black;
-    text-transform: capitalize;
-    padding: 0 45px;
-    margin-top: 30px;
-    font-weight: 500;
-    border-radius: 10px;
+.contact-submit-btn {
+    text-decoration: none;
+    background-color: rgb(181, 242, 246);
+    color: green;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 1px cyan;
 }
 .touch-input input,textarea{
     border-radius: 0;
