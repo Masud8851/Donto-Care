@@ -26,10 +26,14 @@ const Services = () => {
 						<div className="container">
 							<div className="row align-items-center justify-content-center">
 								<div className="col-md-6 ">
-									<h1>Service Details</h1>
-									<p>
+									<h1>Our Services</h1>
+									<p className="text-start">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit.
-										Ipsam, hic?
+										Nihil eveniet dicta tempore neque magnam repudiandae magni
+										similique tempora sint, quaerat alias corrupti deserunt
+										excepturi hic officiis iusto, esse laboriosam aut. Delectus
+										quod consectetur rerum explicabo molestiae totam porro,
+										dolorem sequi neque accusantium ab perferendis.
 									</p>
 								</div>
 								<div className="col-md-6 ">
