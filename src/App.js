@@ -7,8 +7,6 @@ import Appointment from "./Pages/Appointment/Appointment";
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
 import NotFound from "./Pages/NotFound/NotFound";
-import Footer from "./Pages/Footer/Footer";
-import Header from "./Pages/Header/Header";
 import Services from "./Pages/Services/Services";
 import AuthProvider from "./Context/AuthProvide";
 import Service from "./Pages/Service/Service";
@@ -18,7 +16,6 @@ function App() {
 		<div className="App">
 			<AuthProvider>
 				<Router>
-					{/* <Header /> */}
 					<Switch>
 						<Route exact path="/">
 							<Home></Home>
@@ -29,6 +26,10 @@ function App() {
 						<Route path="/services">
 							<Services></Services>
 						</Route>
+						{/* Private Route Import Hocchena */}
+						{/* <Route path="/services/:id">
+							<Service></Service>
+						</Route> */}
 						<Route path="/services/:id">
 							<Service></Service>
 						</Route>
@@ -51,7 +52,6 @@ function App() {
 							<NotFound></NotFound>
 						</Route>
 					</Switch>
-					{/* <Footer /> */}
 				</Router>
 			</AuthProvider>
 		</div>

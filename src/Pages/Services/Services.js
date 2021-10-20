@@ -9,7 +9,13 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 const Services = () => {
-	const { doctors } = useFirebase();
+	const { id, doctors } = useFirebase();
+	const [services, setServices] = useState([]);
+	useEffect(() => {
+		fetch("data.json")
+			.then((res) => res.json())
+			.then((data) => setServices(data));
+	}, []);
 
 	return (
 		<div>
@@ -38,7 +44,7 @@ const Services = () => {
 				<h1 className="mt-5 text-success">[ Services ]</h1>
 				<Container>
 					<Row xs={1} md={3} className="g-4 py-4">
-						{doctors.map((service) => (
+						{services.map((service) => (
 							<Col>
 								<Card className="h-100">
 									<Card.Img variant="top" src={service.img} height="200" />
@@ -47,17 +53,29 @@ const Services = () => {
 										<Card.Text>
 											{`${service.description.slice(0, 140)}...`}
 										</Card.Text>
-										<Link to={`/service/${doctors.id}`}>
+										<Link to={`/services/:${id}`}>
+											<button className="btn btn-primary btn-sm">
+												View Details
+											</button>
+										</Link>
+										{/* <Link to={`/service/${doctors.id}`}>
 											<button className="btn btn-primary btn-sm">
 												{" "}
 												View Details{" "}
 											</button>
-										</Link>
+										</Link> */}
 										{/* <button className="btn btn-primary btn-sm">
 											{doctors.map((service) => (
 												<Service key={service.id} service={service}></Service>
 											))}
 										</button> */}
+										{/* <Link to="{`/services/:${id}`}">
+											<button className="btn btn-primary btn-sm">
+												{doctors.map((service) => (
+													<Service key={service.id} service={service}></Service>
+												))}
+											</button>
+										</Link> */}
 									</Card.Body>
 								</Card>
 							</Col>

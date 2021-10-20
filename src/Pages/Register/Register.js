@@ -1,10 +1,62 @@
-import React from "react";
+import {
+	getAuth,
+	createUserWithEmailAndPassword,
+	sendEmailVerification,
+	signInWithEmailAndPassword,
+} from "firebase/auth";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import "./Register.css";
 
 const Register = () => {
+	const [name, setName] = useState("");
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
+	const [error, setError] = useState("");
+
+	const auth = getAuth();
+
+	const handleRegistration = (e) => {
+		e.preventDefault();
+		// console.log(email, password);
+		if (password.length < 6) {
+			setError("Password Must be at least 6 characters long.");
+			return;
+		}
+		if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
+			setError("Password must contain 2 upper case");
+			return;
+		}
+		createUserWithEmailAndPassword(auth, email, password)
+			.then((result) => {
+				const user = result.user;
+				console.log(user);
+				setError("");
+				verifyEmail();
+			})
+			.catch((error) => {
+				setError(error.message);
+			});
+	};
+
+	const verifyEmail = () => {
+		sendEmailVerification(auth.currentUser).then((result) => {
+			console.log(result);
+		});
+	};
+
+	const handleEmailChange = (e) => {
+		console.log(e.target.value);
+		setEmail(e.target.value);
+	};
+
+	const handlePasswordChange = (e) => {
+		console.log(e.target.value);
+		setPassword(e.target.value);
+	};
+
 	return (
 		<div>
 			<div className="register">
@@ -12,7 +64,7 @@ const Register = () => {
 				<div className="row ">
 					<div className="col-md-3"></div>
 					<div className="col-md-6">
-						<div className="p-5 sign-up">
+						<form className="p-5 sign-up">
 							<h1 className="sign-in">Sign Up</h1>
 							<div className="d-flex flex-column p-2">
 								<input
@@ -22,12 +74,14 @@ const Register = () => {
 									className="border-0 p-3 mb-4"
 								/>
 								<input
+									onChange={handleEmailChange}
 									type="email"
 									required
 									placeholder="Enter your email"
 									className="border-0 p-3 mb-4"
 								/>
 								<input
+									onBlur={handlePasswordChange}
 									type="password"
 									required
 									placeholder="Enter password"
@@ -40,10 +94,15 @@ const Register = () => {
 									className="border-0 p-3 mb-1"
 								/>
 							</div>
+							<div className="row mb-3 text-danger text-center">{error}</div>
 							<div className="p-2 mb-2">
-								<Link to="/login" className="login-btn">
+								<button
+									onClick={handleRegistration}
+									type="submit"
+									className="login-btn"
+								>
 									Create Account Now
-								</Link>
+								</button>
 							</div>
 
 							<Link className="already-account" to="/login">
@@ -63,7 +122,7 @@ const Register = () => {
 									<i class="fab fa-google"></i> Git
 								</Link>
 							</div>
-						</div>
+						</form>
 					</div>
 					<div className="col-md-3"></div>
 				</div>

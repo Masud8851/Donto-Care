@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import useAuth from "../../Hooks/useAuth";
 import first from "../../image/About/about-4.png";
@@ -7,9 +7,11 @@ import { Link } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
-const Service = ({ service }) => {
+const Service = ({ services }) => {
 	const { id } = useParams();
+	console.log(id);
 	// const { id, img, title, description } = service;
+
 	return (
 		<div>
 			<div className="services-head">

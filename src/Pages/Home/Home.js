@@ -128,10 +128,9 @@ const Home = () => {
 									<Card.Text>
 										{`${doctor.description.slice(0, 140)}...`}
 									</Card.Text>
-									<Link to={`/service/${doctor.id}`}>
+									<Link to={`/services/${doctor.id}`}>
 										<button className="btn btn-primary btn-sm">
-											{" "}
-											View Details{" "}
+											View Details
 										</button>
 									</Link>
 								</Card.Body>
