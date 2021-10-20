@@ -12,7 +12,7 @@ const Doctors = () => {
 				<div className="container">
 					<div className="row align-items-center justify-content-center">
 						<div className="col-md-6 ">
-							<h1>Service Details</h1>
+							<h1>All Dentists Member</h1>
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
 								hic?
