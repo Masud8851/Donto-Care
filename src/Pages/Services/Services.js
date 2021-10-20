@@ -47,13 +47,13 @@ const Services = () => {
 						{services.map((service) => (
 							<Col>
 								<Card className="h-100">
-									<Card.Img variant="top" src={service.img} height="200" />
+									<Card.Img variant="top" src={service?.img} height="200" />
 									<Card.Body>
-										<Card.Title>{service.title}</Card.Title>
+										<Card.Title>{service?.title}</Card.Title>
 										<Card.Text>
 											{`${service.description.slice(0, 140)}...`}
 										</Card.Text>
-										<Link to={`/service/:${service.id}`}>
+										<Link to={`/service/:${service?.id}`}>
 											<button className="btn btn-primary btn-sm">
 												View Details
 											</button>
