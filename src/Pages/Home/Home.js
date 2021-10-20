@@ -64,7 +64,7 @@ const Home = () => {
 				<h1 className="mb-5 text-success">[ Hospitality ]</h1>
 				<div className="row row-cols-1 row-cols-md-3 g-4">
 					<div className="col">
-						<div className="card h-100">
+						<div className="card h-100 hospitality">
 							<img
 								src={appointment}
 								className="card-img-top rounded mt-3  mx-auto p-2 w-25 m-2"
@@ -80,7 +80,7 @@ const Home = () => {
 						</div>
 					</div>
 					<div className="col">
-						<div className="card h-100">
+						<div className="card h-100 hospitality">
 							<img
 								src={emergency}
 								className="card-img-top  mx-auto p-2 w-25 m-2"
@@ -96,7 +96,7 @@ const Home = () => {
 						</div>
 					</div>
 					<div className="col">
-						<div className="card h-100">
+						<div className="card h-100 hospitality">
 							<img
 								src={t427}
 								className="card-img-top rounded-circle mx-auto p-2 w-25 m-3"
