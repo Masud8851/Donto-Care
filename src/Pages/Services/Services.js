@@ -53,32 +53,20 @@ const Services = () => {
 										<Card.Text>
 											{`${service.description.slice(0, 140)}...`}
 										</Card.Text>
-										<Link to={`/services/:${id}`}>
+										<Link to={`/service/:${service.id}`}>
 											<button className="btn btn-primary btn-sm">
 												View Details
 											</button>
 										</Link>
-										{/* <Link to={`/service/${doctors.id}`}>
-											<button className="btn btn-primary btn-sm">
-												{" "}
-												View Details{" "}
-											</button>
-										</Link> */}
-										{/* <button className="btn btn-primary btn-sm">
-											{doctors.map((service) => (
-												<Service key={service.id} service={service}></Service>
-											))}
-										</button> */}
-										{/* <Link to="{`/services/:${id}`}">
-											<button className="btn btn-primary btn-sm">
-												{doctors.map((service) => (
-													<Service key={service.id} service={service}></Service>
-												))}
-											</button>
-										</Link> */}
 									</Card.Body>
 								</Card>
 							</Col>
+						))}
+						{services.map((service) => (
+							<Service service={service}>
+								id={service.id}
+								service={service}
+							</Service>
 						))}
 					</Row>
 				</Container>

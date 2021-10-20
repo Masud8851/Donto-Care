@@ -10,6 +10,7 @@ import NotFound from "./Pages/NotFound/NotFound";
 import Services from "./Pages/Services/Services";
 import AuthProvider from "./Context/AuthProvide";
 import Service from "./Pages/Service/Service";
+import PrivateRoute from "./Pages/PrivateRoute/PrivateRoute";
 
 function App() {
 	return (
@@ -26,13 +27,9 @@ function App() {
 						<Route path="/services">
 							<Services></Services>
 						</Route>
-						{/* Private Route Import Hocchena */}
-						{/* <Route path="/services/:id">
+						<PrivateRoute path="/service/:id">
 							<Service></Service>
-						</Route> */}
-						<Route path="/services/:id">
-							<Service></Service>
-						</Route>
+						</PrivateRoute>
 						<Route path="/about">
 							<AboutUs></AboutUs>
 						</Route>

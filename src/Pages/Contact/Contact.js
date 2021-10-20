@@ -4,8 +4,11 @@ import first from "../../image/About/about-4.png";
 import { Link } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import useAuth from "../../Hooks/useAuth";
 
 const Contact = () => {
+	const { doctors } = useAuth();
+	console.log(doctors);
 	return (
 		<div>
 			<div className="services-head">
