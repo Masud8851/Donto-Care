@@ -55,6 +55,18 @@ const Header = () => {
 											Services
 										</NavLink>
 									</li>
+									<li className="nav-item">
+										<NavLink
+											className="nav-link"
+											to="/doctors"
+											activeStyle={{
+												fontWeight: "bold",
+												color: "blue",
+											}}
+										>
+											Doctors
+										</NavLink>
+									</li>
 									<li className="nav-item ">
 										<NavLink
 											className="nav-link "
