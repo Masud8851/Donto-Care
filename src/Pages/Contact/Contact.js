@@ -18,9 +18,12 @@ const Contact = () => {
 						<div className="row g-3 align-items-center justify-content-center ">
 							<div className="col-md-6 ">
 								<h1>Contact Details</h1>
-								<p>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Ipsam, hic?
+								<p className="text-start">
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+									Nulla, explicabo. Ad reprehenderit, excepturi architecto
+									dignissimos dolores vitae numquam praesentium ut, suscipit
+									quae quisquam optio dolor soluta provident sunt repudiandae
+									unde delectus ea ratione velit!
 								</p>
 							</div>
 							<div className="col-md-6 ">
